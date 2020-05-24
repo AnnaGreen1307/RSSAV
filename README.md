@@ -1,2 +1,3 @@
-# RSSAV
-WSB project - RSS mail sender
+# pyRss2EmailFlask
+
+wykorzystanie Flask
