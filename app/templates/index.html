@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>RSS URLs:</p>
+    {% for rssUrl in rssUrlsList %}
+    <div><p>{{ rssUrl.url }}</p></div>
+    {% endfor %}
+    <br><br>
+    <p>Emails:</p>
+    {% for user in usersList %}
+    <div><p>{{ user.email }}</p></div>
+    {% endfor %}
+    <br><br>
+    <div><a href="{{ url_for('sendMessage') }}">Send message</a></div>
+    <br><br>
+    <div>{{ rssPreviewHtml }}</div>
+{% endblock %}
